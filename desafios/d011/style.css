@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    background-image: url('imagens/espaco.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#astronauta {
+    height: 97vh;
+    background-image: url('imagens/astronauta.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
