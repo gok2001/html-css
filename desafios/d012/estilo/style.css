@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
-    --fonte-padrao: Arial, Helvetica, sans-serif;
-    --fonte-titulo: 'Passion One';
-    --fonte-cordel: 'Sriracha';
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-cordel: 'Sriracha', cursive;
 }
 
 * {
@@ -27,8 +27,9 @@ header {
 }
 
 header > h1 {
+    font-variant: small-caps;
     font-family: var(--fonte-titulo);
-    font-size: 5em;
+    font-size: 8vw;
     padding-top: 50px;
 }
 
@@ -49,7 +50,7 @@ a:hover {
 
 section {
     font-family: var(--fonte-cordel);
-    font-size: 2em;
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -59,31 +60,34 @@ section {
 #fundo1 {
     background-color: transparent;
     background-image: url('../imagens/background001.jpg');
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.468);
 }
 
 #fundo2 {
     background-color: transparent;
     background-image: url('../imagens/background002.jpg');
-    background-position: center center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.437);
 }
 
-p {
-    padding: 10px;
-    margin: 30px;
+section > p {
+    padding-bottom: 2em;
 }
 
-p.diferente {
+section > p.diferente {
     background-color: rgba(0, 0, 0, 0.466);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
